@@ -22,8 +22,8 @@ app.use(cors({
 }));
 
 
-const user = require("./routes/userRoutes");
-const { errorMiddleware } = require("./middlewares/errorMiddleware");
+const user = require("../routes/userRoutes");
+const { errorMiddleware } = require("../middlewares/errorMiddleware");
 
 app.use("/api/v1", user);
 

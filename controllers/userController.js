@@ -1,7 +1,7 @@
 const catchAsynceError = require("../middlewares/catchAsynceError");
 const User = require("../models/userModel");
 const sendToken = require("../utils/sendToken");
-const ErrorHandler = require("../utils/errorHandler"); 
+const ErrorHandler = require("../error/errorHandler"); 
 
 // LOGIN USER 
 exports.loginUser = catchAsynceError(async (req, res, next) => {
